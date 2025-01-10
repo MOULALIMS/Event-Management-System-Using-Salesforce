@@ -34,9 +34,9 @@ The Event Management System is a Salesforce-based application that enables organ
   * Clickable event cards to view event-specific details.
 
 # Technology Stack
-  ## Salesforce Platform: Custom objects, Apex classes, Lightning Web Components (LWC), and dashboards.
-  ## GitHub for Version Control: Track changes and manage project updates collaboratively.
-  ## Lightning Design System (SLDS): For a responsive and visually appealing UI.
+  ### Salesforce Platform: Custom objects, Apex classes, Lightning Web Components (LWC), and dashboards.
+  ### GitHub for Version Control: Track changes and manage project updates collaboratively.
+  ### Lightning Design System (SLDS): For a responsive and visually appealing UI.
 
 ## How Do You Plan to Deploy Your Changes?
 
