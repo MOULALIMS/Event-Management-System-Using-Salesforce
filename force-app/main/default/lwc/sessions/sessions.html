@@ -1,0 +1,39 @@
+<template>
+    <lightning-card title="Upcoming Events" icon-name="utility:event">
+        <div class="slds-card_body slds-card__body_inner">
+            <template if:true={events}>
+                <lightning-input 
+                    type="search"
+                    onchange={handleSearchTermChange}
+                    variant="label-hidden"
+                    class="slds-var-m-bottom_small"
+                    label="Search"
+                    placeholder="Search for events"
+                    value={searchTerm}>
+                </lightning-input>
+                <lightning-layout multiple-rows="true" pull-to-boundary="small">
+                    <template for:each={filteredEvents} for:item="event">
+                        <lightning-layout-item key={event.Id} size="4" class="slds-var-p-around_x-small">
+                            <div class="event-card" data-id={event.Id} onclick={handleCardClick}>
+                                <img class="event-image" src={event.Image_URL__c} alt={event.Name}></img>
+                                <div class="event-details">
+                                    <h2 class="slds-text-heading_medium">{event.Name}</h2>
+                                    <p>{event.Start_Time__c}</p>
+                                    <p>{event.City__c}</p>
+                                </div>
+                            </div>
+                        </lightning-layout-item>
+                    </template>
+                </lightning-layout>
+            </template>
+            <template if:false={filteredEvents}>
+                <div class="slds-align_absolute-center slds-var-m-vertical_small">No Events Found. Try again</div>
+            </template>
+            <template if:true={error}>
+                <div class="slds-text-color_error">
+                    An error occurred while loading the events list.
+                </div>
+            </template>
+        </div>
+    </lightning-card>
+</template>
