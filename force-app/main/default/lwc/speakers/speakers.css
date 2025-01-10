@@ -1,0 +1,37 @@
+.speaker-card {
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+.speaker-card:hover {
+    transform: scale(1.05);
+}
+.speaker-image {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10%;
+    margin-bottom: 16px;
+}
+.speaker-details {
+    font-size: 1rem;
+}
+.speaker-name {
+    font-weight: bold;
+    font-size: 1.0rem;
+    margin-bottom: 8px;
+}
+.speaker-organization {
+    font-weight: bold;
+    color: #333;
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+.speaker-sessions {
+    color: #6b6b6b;
+    font-size: 1rem;
+}

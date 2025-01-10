@@ -1,0 +1,27 @@
+<template>
+    <lightning-card title="Top Speakers">
+        <div class="slds-card__body slds-card__body_inner">
+            <template if:true={speakers}>
+                <lightning-layout multiple-rows="true" pull-to-boundary="small">
+                    <template for:each={speakers} for:item="speaker">
+                        <lightning-layout-item key={speaker.Id} size="6" class="slds-var-p-around_x-small">
+                            <div class="speaker-card" data-id={speaker.Id} onclick={handleCardClick}>
+                                <img src={speaker.Image_URL__c} alt="Speaker Image" class="speaker-image" />
+                                <div class="speaker-details">
+                                    <p class="speaker-name">{speaker.Name} {speaker.Last_Name__c}</p>
+                                    <p class="speaker-organization">{speaker.accountName}</p>
+                                    <p class="speaker-sessions">Sessions Given: {speaker.Sessions_Given__c}</p>
+                                </div>
+                            </div>
+                        </lightning-layout-item>
+                    </template>
+                </lightning-layout>
+            </template>
+            <template if:true={error}>
+                <div class="slds-text-color_error">
+                    Error fetching speakers: {error.body.message}
+                </div>
+            </template>
+        </div>
+    </lightning-card>
+</template>
