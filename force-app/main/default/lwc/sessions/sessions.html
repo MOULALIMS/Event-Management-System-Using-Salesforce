@@ -13,7 +13,7 @@
                 </lightning-input>
                 <lightning-layout multiple-rows="true" pull-to-boundary="small">
                     <template for:each={filteredEvents} for:item="event">
-                        <lightning-layout-item key={event.Id} size="4" class="slds-var-p-around_x-small">
+                        <lightning-layout-item key={event.Id} size="3.5" class="slds-var-p-around_x-small">
                             <div class="event-card" data-id={event.Id} onclick={handleCardClick}>
                                 <img class="event-image" src={event.Image_URL__c} alt={event.Name}></img>
                                 <div class="event-details">

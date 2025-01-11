@@ -9,7 +9,7 @@
                                 <img src={speaker.Image_URL__c} alt="Speaker Image" class="speaker-image" />
                                 <div class="speaker-details">
                                     <p class="speaker-name">{speaker.Name} {speaker.Last_Name__c}</p>
-                                    <p class="speaker-organization">{speaker.accountName}</p>
+                                    <p class="speaker-organization">Org: {speaker.Organization__r.Name}</p>
                                     <p class="speaker-sessions">Sessions Given: {speaker.Sessions_Given__c}</p>
                                 </div>
                             </div>
