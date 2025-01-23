@@ -57,6 +57,10 @@ The Event Management System is a Salesforce-based application that enables organ
 6. **Scalability and Flexibility:**  
    - Built on the Salesforce platform, the system is highly scalable, allowing organizations to manage events of varying sizes and complexities.
 
+![Screenshot 2025-01-23 191043](https://github.com/user-attachments/assets/29cf2545-ff75-496a-835c-baffc65469d4)
+![Screenshot 2025-01-23 191310](https://github.com/user-attachments/assets/7cdeae78-1670-4aba-bb8e-2238e8f3cdde)
+![Screenshot 2025-01-23 191342](https://github.com/user-attachments/assets/4a34c189-ae2c-4ddf-8430-e91df110fc05)
+![Screenshot 2025-01-23 191408](https://github.com/user-attachments/assets/614c64dc-1509-445b-9990-7894f7c95c9e)
 ![Screenshot 2025-01-23 191437](https://github.com/user-attachments/assets/1d7505b7-f7bd-4a31-af52-7a8e8048cab1)
 
 
