@@ -55,7 +55,10 @@ The Event Management System is a Salesforce-based application that enables organ
    - Historical data analysis allows organizations to identify successful event patterns and optimize resource allocation for future events.  
 
 6. **Scalability and Flexibility:**  
-   - Built on the Salesforce platform, the system is highly scalable, allowing organizations to manage events of varying sizes and complexities.  
+   - Built on the Salesforce platform, the system is highly scalable, allowing organizations to manage events of varying sizes and complexities.
+
+![Screenshot 2025-01-23 191437](https://github.com/user-attachments/assets/1d7505b7-f7bd-4a31-af52-7a8e8048cab1)
+
 
 ## How Do You Plan to Deploy Your Changes?
 
